@@ -1,6 +1,54 @@
 body {
     display: flex;
   }
+
+p, h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #0a246a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+.sidebar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.sidebar h3 {
+    color: white;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+}
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.project img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.project:hover {
+    background-color: #f0f0f0;
+}
+
+body, html {
+    height: 100vh; /* Set minimum height to 100vh (viewport height) */
+    margin: 0; /* Remove default margin around the body */
+    font-family: Georgia, serif; /* Use Georgia font for all text */
+  }
+  
   .sidebar {
     width: 300px;
     background-color: #0a246a;
@@ -8,32 +56,20 @@ body {
     flex-direction: column;
     align-items: center;
     display: none;
+    height: 100%; /* Set sidebar height to 100% of viewport height */
   }
-  .sidebar img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
-  }
-  .sidebar h3 {
-    color: white;
-  }
+  
   .content {
     flex: 1;
     padding: 20px;
+    margin-left: 20px; /* Add margin between sidebar and content */
   }
+  
   .project {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     cursor: pointer;
+    padding: 10px; /* Add 10px padding inside project divs */
   }
-  .project img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  .project:hover {
-    background-color: #f0f0f0;
-  }
+  
