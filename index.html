@@ -1,417 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>Bertram Nicolai Hage's Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-img">
+            <img src="cv-billede.jpg" alt="Profile Picture">
+        </div>
+        <div class="sidebar-text">
+            <h3>Profile</h3>
+            <p>Analytical and detail-oriented professional with a strong interest in data-driven insights and business optimization. </p>
+            <p><br>With a background in the restaurant industry, I bring a structured and collaborative approach to achieving collective goals and am adaptable to the tasks that may be required.</p>
+            <p><br></p>
+            <a class="email" href="mailto:b.hage@me.com">b.hage@me.com</a>
+            <p></p>
+            <a class="linkedin" href="https://linkedin.com/in/bertram-nicolai-hage">LinkedIn</a>
+            <p><br>Svend Trøsts Vej 19, 1912 Frederiksberg C</p>
+            <p><br>b. 1999</p>
+        </div>
+    </div>
 
-  <!--
-    - #MAIN
-  -->
+    <!-- Content -->
+    <div class="content">
+        <h1>Bertram Nicolai Hage</h1>
+        <h2 style="color: #0a246a;">Engineering student DTU – B.Sc. Data Science and Management</h2>
 
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/cv-billede.jpg" alt="Bertram Hage" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Bertram Hage">Richard hanrick</h1>
-
-          <p class="title">Engineering student DTU – B.Sc. Data Science and Management</p>
+        <h3 style="color: #0a246a;">Projects</h3>
+        <div class="project" onclick="navigateToProject('https://github.com/bertramhage/machine-learning-pca')">
+        <img src="code-icon.png" alt="Project 1">
+        <div class="project-content">
+            <h4>Machine learning PCA and visualization</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium ante id augue rhoncus volutpat. Duis mollis, risus et tincidunt mattis, turpis metus mattis nisi, sit amet ultrices dui purus a ante. Nam feugiat, mauris a porttitor posuere, enim diam sollicitudin justo, vitae iaculis sapien tortor finibus felis. Aenean tempus pretium lectus, non feugiat arcu imperdiet eu. Aliquam aliquet sem ac tincidunt molestie. Donec eu egestas lorem, sit amet lobortis erat. Cras dapibus consequat turpis ut tincidunt. Ut nulla purus, dignissim et enim quis, elementum interdum justo. Nunc vitae turpis sit amet velit mollis pretium nec vel leo.</p>
+            <div class="labels">
+                <span class="label">Python</span>
+                <span class="label">PCA</span>
+                <span class="label">Data visualization</span>
+            </div>
+        </div>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+        <div class="project" onclick="navigateToProject('https://github.com/bertramhage/database-systems')">
+        <img src="code-icon.png" alt="Project 2">
+        <div class="project-content">
+            <h4>Database project</h4>
+            <p>Nulla pellentesque sagittis libero, sit amet porta lorem laoreet in. Integer tincidunt erat suscipit felis convallis, vitae porta dui dictum. Sed fringilla nisl ac tortor cursus fermentum. Nunc turpis enim, lobortis a nunc ac, porttitor facilisis lectus. Etiam vitae magna lobortis, tincidunt ex quis, sodales eros. Mauris sit amet leo volutpat, sodales sapien ut, pretium nibh. Pellentesque eu tempus dolor, eu sollicitudin mauris. Morbi vestibulum nulla id lacus pulvinar, ac varius nibh tincidunt. Donec eget iaculis nulla.</p>
+            <div class="labels">
+                <span class="label">SQL</span>
+                <span class="label">Database</span>
             </div>
+        </div>
+        </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:b.hage@me.com" class="contact-link">b.hage@me.com</a>
+        <div class="project" onclick="navigateToProject('https://github.com/bertramhage/grades-calculation')">
+        <img src="code-icon.png" alt="Project 3">
+        <div class="project-content">
+            <h4>Python project</h4>
+            <p>Sed convallis mauris eu lacus sodales dignissim. Phasellus cursus sapien at molestie bibendum. Integer nunc augue, scelerisque vitae est nec, cursus egestas dolor. Nullam quis tortor eu enim hendrerit sollicitudin. Etiam feugiat mi eu orci sollicitudin dictum. Nunc finibus justo elit. Suspendisse sollicitudin blandit malesuada. Vivamus a orci aliquet, laoreet lacus sed, facilisis turpis. Aliquam eget dolor in lorem imperdiet venenatis. Etiam lacinia diam efficitur vestibulum placerat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam blandit, sem at eleifend posuere, elit tellus maximus quam, at aliquet magna tortor eget libero. Praesent sollicitudin turpis sit amet dui lobortis, in tempor ante vestibulum.</p>
+            <div class="labels">
+                <span class="label">Python</span>
             </div>
+        </div>
+        </div>
 
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
+        <div class="project" onclick="navigateToProject('https://mangholm.dk')">
+        <img src="mangholm.png" alt="Project 4">
+        <div class="project-content">
+            <h4>Mangholm website</h4>
+            <p>In ut pulvinar sapien, a tristique metus. Duis ultrices turpis a augue pulvinar hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vehicula justo id vulputate dapibus. In hac habitasse platea dictumst. In nisi felis, finibus ut urna a, lobortis dignissim elit. Morbi congue tempor massa ut commodo. In vel quam vel orci porta sagittis. Sed vel placerat tellus, egestas molestie est. Ut non purus vitae eros convallis pellentesque. Quisque ut dolor interdum, egestas turpis eu, dapibus ligula. Nam tincidunt leo ut finibus lobortis. Vestibulum mollis ipsum id sapien hendrerit hendrerit. Maecenas tempus ligula ut lorem fermentum sollicitudin.</p>
+            <div class="labels">
+                <span class="label">HTML</span>
+                <span class="label">CSS</span>
+                <span class="label">Wordpress</span>
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+4542414580" class="contact-link">+45 42 41 45 80</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Sacramento, California, USA</address>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-
-  <!--
-    - custom js link
-
-  <script src="./assets/js/script.js"></script>
-
-
-    - ionicon link
-
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  -->
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    function navigateToProject(projectUrl) {
+      window.location.href = projectUrl;
+    }
+  </script>
 </body>
-
 </html>
