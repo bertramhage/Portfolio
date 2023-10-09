@@ -21,7 +21,8 @@ p, h1, h2, h3 {
     margin-top: 20px;
 }
 .sidebar h3 {
-    color: red;
+    color: white;
+    text-align: left;
 }
 .content {
     flex: 1;
@@ -46,7 +47,7 @@ p, h1, h2, h3 {
 body, html {
     height: 100vh; /* Set minimum height to 100vh (viewport height) */
     margin: 0; /* Remove default margin around the body */
-    font-family: Georgia, serif; /* Use Georgia font for all text */
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .sidebar {
