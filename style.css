@@ -21,7 +21,7 @@ p, h1, h2, h3 {
     margin-top: 20px;
 }
 .sidebar h3 {
-    color: white;
+    color: red;
 }
 .content {
     flex: 1;
